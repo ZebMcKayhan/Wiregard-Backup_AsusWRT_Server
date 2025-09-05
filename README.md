@@ -9,7 +9,7 @@ mkdir -m 755 -p /jffs/addons/SaveRestoreNVRAM
 curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubusercontent.com/Martinski4GitHub/CustomMiscUtils/master/NVRAM/SaveRestoreNVRAMvars.sh -o /jffs/addons/SaveRestoreNVRAM/SaveRestoreNVRAMvars.sh && chmod 755 /jffs/addons/SaveRestoreNVRAM/SaveRestoreNVRAMvars.sh
 ```
 
-2.Download the config file from this repository to only save the nvram variables assiciated with Wireguard Server:
+2. Download the config file from this repository to only save the nvram variables associated with Wireguard Server:
 ```sh
 curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubusercontent.com/ZebMcKayhan/Wiregard-Backup_AsusWRT_Server/main/NVRAM_VarList_wg-server.txt -o /jffs/addons/SaveRestoreNVRAM/NVRAM_VarList.txt
 ```
@@ -18,8 +18,8 @@ curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubuser
 ```sh
 /jffs/addons/SaveRestoreNVRAM/SaveRestoreNVRAMvars.sh -menu
 ```
-Check under "dp" option so the path for saving backups are correct and proper. choose something differently if needed by selecting this option.
-Check under "fl" that the config file we edited are used, if not, adjust by selecting this option.
+- Check under "dp" option so the path for saving backups are correct and proper. choose something differently if needed by selecting this option.
+- Check under "fl" that the config file we edited are used, if not, adjust by selecting this option.
 
 
 4. For backing up your Wireguard server, select option "bk". If everything is alright, the script will output each NVRAM variable its backing up. For sanity check, there should be 10 entries for the server peer itself and additionally 9 entries for each client peer. in my case with the server and 2 client I have 28 entries backed up.
