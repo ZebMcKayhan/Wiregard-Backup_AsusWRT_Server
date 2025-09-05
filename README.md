@@ -3,7 +3,7 @@ Config/Help files for backing up Wireguard server config on AsusWRT
 
 Steps to backup your Wireguard server for future restore:
 
-1. Install @Martinski4GitHub script for saving subset of NVRAM variables:
+1. Install [@Martinski4GitHub](https://github.com/Martinski4GitHub) script for saving subset of NVRAM variables:
 ```sh
 mkdir -m 755 -p /jffs/addons/SaveRestoreNVRAM
 curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubusercontent.com/Martinski4GitHub/CustomMiscUtils/master/NVRAM/SaveRestoreNVRAMvars.sh -o /jffs/addons/SaveRestoreNVRAM/SaveRestoreNVRAMvars.sh && chmod 755 /jffs/addons/SaveRestoreNVRAM/SaveRestoreNVRAMvars.sh
