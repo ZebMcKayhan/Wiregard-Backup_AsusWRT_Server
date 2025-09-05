@@ -11,7 +11,7 @@ curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubuser
 
 2.Download the config file from this repository to only save the nvram variables assiciated with Wireguard Server:
 ```sh
-curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubusercontent.com/ZebMcKayhan/Wireguard-Backup_AsusWRT_Server/master/NVRAM_VarList_wg-server.txt -o /jffs/addons/SaveRestoreNVRAM/NVRAM_VarList.txt
+curl  -kLSs --retry 3 --retry-delay 5 --retry-connrefused https://raw.githubusercontent.com/ZebMcKayhan/Wiregard-Backup_AsusWRT_Server/main/NVRAM_VarList_wg-server.txt -o /jffs/addons/SaveRestoreNVRAM/NVRAM_VarList.txt
 ```
 
 3. Run the script in menu mode:
